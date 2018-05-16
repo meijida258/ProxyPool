@@ -183,5 +183,4 @@ class GetProxies:
 
 if __name__ == '__main__':
     gp = GetProxies()
-    a = gp.get_from_mimiip()
-    print(a)
+

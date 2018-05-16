@@ -1,4 +1,4 @@
-from GetProxies.getFreePorxies import GetProxies
+from GetProxies.getFreeProxies import GetProxies
 from multiprocessing import Pool as ProcessPool
 from Util.getConfig import GetConfig
 
