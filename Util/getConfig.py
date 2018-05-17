@@ -16,3 +16,8 @@ class GetConfig:
         return used_proxy_funcs
 
 
+
+if __name__ == '__main__':
+    gc = GetConfig()
+else:
+    gc = GetConfig()

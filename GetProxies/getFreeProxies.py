@@ -38,6 +38,8 @@ class GetProxies:
         if response:
             proxies_list = re.findall(r'(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d+)', response.text)
             return proxies_list
+        else:
+            return list()
 
     @staticmethod
     @source_ip_format
@@ -142,15 +144,19 @@ class GetProxies:
             proxies_list = re.findall(r'<td>\s*?(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s*?</td>[\s\S]*?<td>\s*?(\d+)\s*?</td>',
                                       response.text)
             return proxies_list
+        else:
+            return list()
 
     @staticmethod
     @source_ip_format
     def get_from_proxylist():
         base_url = 'https://proxy-list.org/english/search.php?search=CN.anonymous-and-elite&country=CN&type=anonymous-and-elite&port=any&ssl=any'
-        response = WebRequest.get(url=base_url, verify_flag=['China anonymous proxy'], response_encoding='utf-8', proxies='gfw_proxies')
+        response = WebRequest.get(url=base_url, verify_flag=['China'], response_encoding='utf-8', proxies='gfw_proxies')
         if response:
             proxies_list = re.findall(r"Proxy\('(.*?)'\)", response.text)
             return proxies_list
+        else:
+            return list()
 
     @staticmethod
     @source_ip_format
@@ -165,6 +171,7 @@ class GetProxies:
                 return proxies_list
             else:
                 return list()
+        return list()
 
     @staticmethod
     @source_ip_format
@@ -180,7 +187,7 @@ class GetProxies:
                 return proxies_list
             except:
                 return list()
-
+        return list()
 if __name__ == '__main__':
     gp = GetProxies()
-
+    print(gp.get_from_proxylist())

@@ -21,4 +21,4 @@ class IpFormat:
                     result.append(base64.b64decode(ip).decode())
                 return result
         else:
-            return None
+            return list()
