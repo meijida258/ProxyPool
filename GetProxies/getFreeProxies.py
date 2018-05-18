@@ -1,6 +1,12 @@
 '''
     获取不同站免费ip的方法
 '''
+import sys
+import os
+
+PACKAGE_PARENT = '..'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 from Util.getHtml import WebRequest
 from Util.ipFormat import IpFormat
 from lxml import etree

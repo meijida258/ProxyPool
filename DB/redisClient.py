@@ -2,7 +2,6 @@
     连接redis，以及相关操作
 '''
 import redis
-from Util.getConfig import GetConfig
 
 class RedisConn:
     def __init__(self):

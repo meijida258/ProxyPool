@@ -4,6 +4,12 @@
     get http://localhost:6324/proxy_get?count=m 获取m个有效ip
     get http://localhost:6324/proxy_get?count=m&score=n 获取m个分数大于n的有效ip
 '''
+import sys
+import os
+
+PACKAGE_PARENT = '..'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 
 from http.server import HTTPServer, BaseHTTPRequestHandler# 启动服务函数
 import re

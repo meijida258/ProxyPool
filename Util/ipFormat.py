@@ -1,6 +1,7 @@
 '''
     处理获取的不同格式的免费ip
 '''
+
 import re, base64
 
 class IpFormat:

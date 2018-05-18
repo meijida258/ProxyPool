@@ -1,6 +1,12 @@
 '''
     定时触发的检验有效ip列表中的ip，更新有效ip信息，删除失效ip
 '''
+import sys
+import os
+
+PACKAGE_PARENT = '..'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 from DB.redisClient import RedisConn
 from Util.checkProxy import check_proxy
 import asyncio

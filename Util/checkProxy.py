@@ -1,6 +1,12 @@
 '''
     异步访问验证网站，快速检验ip有效性,返回检验结果
 '''
+import sys
+import os
+
+PACKAGE_PARENT = '..'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 from Util.getConfig import GetConfig
 import aiohttp
 import time

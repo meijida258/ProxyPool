@@ -1,6 +1,12 @@
 '''
     封住requests的get请求，方便使用
 '''
+import sys
+import os
+
+PACKAGE_PARENT = '..'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 from Util.getUserAgent import FakeChromeUA
 import requests
 import time
