@@ -1,8 +1,7 @@
-"""
-This module provide fake ua for all spiders.
-"""
+'''
+    随机获取ua
+'''
 import random
-
 
 __all__ = ['FakeChromeUA']
 

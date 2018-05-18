@@ -1,3 +1,6 @@
+'''
+    读取config文件
+'''
 from configparser import ConfigParser
 import os
 

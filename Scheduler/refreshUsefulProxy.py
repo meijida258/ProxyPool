@@ -1,10 +1,9 @@
-from DB.redisClient import RedisConn
-from Util.checkProxy import check_proxy
-import asyncio
-
 '''
     定时触发的检验有效ip列表中的ip，更新有效ip信息，删除失效ip
 '''
+from DB.redisClient import RedisConn
+from Util.checkProxy import check_proxy
+import asyncio
 
 class RefreshProxy:
     def refresh_result(self, refresh_proxies):
@@ -17,7 +16,7 @@ class RefreshProxy:
             else:
                 rc.del_hash('UsefulProxy', result['proxy'])
         return '验证{}个ip，有效ip:{}个,失效ip：{}个'.format(len(refresh_proxies), useful_count, len(refresh_proxies)-useful_count)
-    
+
     def refresh_main(self):
         rc = RedisConn()
         useful_proxies = rc.get_all_hash('UsefulProxy')

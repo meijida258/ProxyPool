@@ -1,8 +1,10 @@
+'''
+    获取不同站免费ip的方法
+'''
 from Util.getHtml import WebRequest
 from Util.ipFormat import IpFormat
 from lxml import etree
 import re
-
 
 def source_ip_format(func):
     def inner():

@@ -2,17 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b8771cd-82a0-4a05-a520-3a682eb03b43" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DB/redisClient.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Scheduler/checkSourceProxies.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Scheduler/refreshUsefulProxy.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Util/checkProxy.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DB/redis.py" afterPath="$PROJECT_DIR$/Main/proxyManager.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DB/ssdb.py" afterPath="$PROJECT_DIR$/Main/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApi/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApi/apis.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApi/myWebServer.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config.ini" afterPath="$PROJECT_DIR$/Config.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DB/redisClient.py" afterPath="$PROJECT_DIR$/DB/redisClient.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GetProxies/getFreeProxies.py" afterPath="$PROJECT_DIR$/GetProxies/getFreeProxies.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/proxyManager.py" afterPath="$PROJECT_DIR$/Main/proxyManager.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scheduler/checkSourceProxies.py" afterPath="$PROJECT_DIR$/Scheduler/checkSourceProxies.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scheduler/getSourceProxies.py" afterPath="$PROJECT_DIR$/Scheduler/getSourceProxies.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scheduler/refreshUsefulProxy.py" afterPath="$PROJECT_DIR$/Scheduler/refreshUsefulProxy.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Util/checkProxy.py" afterPath="$PROJECT_DIR$/Util/checkProxy.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Util/getConfig.py" afterPath="$PROJECT_DIR$/Util/getConfig.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Util/getHtml.py" afterPath="$PROJECT_DIR$/Util/getHtml.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Util/getUserAgent.py" afterPath="$PROJECT_DIR$/Util/getUserAgent.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Util/ipFormat.py" afterPath="$PROJECT_DIR$/Util/ipFormat.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,56 +31,36 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="checkProxy.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Util/checkProxy.py">
+      <file leaf-file-name="myWebServer.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebApi/myWebServer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="coroutines.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Python35/Lib/asyncio/coroutines.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="client.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Python35/Lib/site-packages/aiohttp/client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="470" column="0" lean-forward="false" selection-start-line="470" selection-start-column="0" selection-end-line="470" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="refreshUsefulProxy.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Scheduler/refreshUsefulProxy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+            <state relative-caret-position="552">
+              <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
               <folding>
-                <element signature="e#0#36#0" expanded="true" />
+                <element signature="e#214#280#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="proxyManager.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main/proxyManager.py">
+      <file leaf-file-name="apis.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebApi/apis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+            <state relative-caret-position="440">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
-                <element signature="e#0#57#0" expanded="true" />
+                <element signature="e#24#60#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="redisClient.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DB/redisClient.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="30" column="63" lean-forward="false" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,39 +69,7 @@
         <entry file="file://C:/mediaSpider/Attack/localtest_multiprocess.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Python35/Lib/site-packages/requests/api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="104" column="15" lean-forward="false" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checkSourceProxies.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Scheduler/checkSourceProxies.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base_events.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Python35/Lib/asyncio/base_events.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="355" column="0" lean-forward="false" selection-start-line="355" selection-start-column="0" selection-end-line="355" selection-end-column="0" />
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -155,39 +106,43 @@
         <option value="$PROJECT_DIR$/proxies_crawl.py" />
         <option value="$PROJECT_DIR$/GetProxies/__init__.py" />
         <option value="$PROJECT_DIR$/Util/__init__.py" />
-        <option value="$PROJECT_DIR$/Util/getUserAgent.py" />
         <option value="F:/proxy_pool/ProxyGetter/getFreeProxy.py" />
         <option value="$PROJECT_DIR$/DB/__init__.py" />
-        <option value="$PROJECT_DIR$/Util/getHtml.py" />
         <option value="$PROJECT_DIR$/Scheduler/__init__.py" />
         <option value="$PROJECT_DIR$/DB/mongo.py" />
         <option value="F:/proxy_pool/Util/utilClass.py" />
         <option value="$PROJECT_DIR$/__init__.py" />
-        <option value="C:/mediaSpider/crawl/media_spider/CloudMusic/scrapy_cloudmusic/scrapy_cloudmusic/pipelines.py" />
         <option value="$PROJECT_DIR$/DB/ssdb.py" />
         <option value="$PROJECT_DIR$/GetProxies/getFreePorxies.py" />
-        <option value="C:/mediaSpider/crawl/media_spider/CloudMusic/scrapy_cloudmusic/scrapy_cloudmusic/spiders/cloudmusic.py" />
-        <option value="$PROJECT_DIR$/Util/getConfig.py" />
         <option value="$PROJECT_DIR$/DB/redis.py" />
         <option value="$PROJECT_DIR$/Main/__init__.py" />
-        <option value="$PROJECT_DIR$/Scheduler/getSourceProxies.py" />
         <option value="C:/mediaSpider/tool/space_file.py" />
-        <option value="$PROJECT_DIR$/DB/redisClient.py" />
-        <option value="$PROJECT_DIR$/GetProxies/getFreeProxies.py" />
-        <option value="$PROJECT_DIR$/Util/ipFormat.py" />
-        <option value="$PROJECT_DIR$/Util/checkProxy.py" />
-        <option value="$PROJECT_DIR$/Scheduler/checkSourceProxies.py" />
-        <option value="$PROJECT_DIR$/Main/proxyManager.py" />
         <option value="C:/mediaSpider/Attack/localtest_multiprocess.py" />
+        <option value="C:/mediaSpider/crawl/media_spider/CloudMusic/scrapy_cloudmusic/scrapy_cloudmusic/spiders/cloudmusic.py" />
+        <option value="C:/mediaSpider/crawl/media_spider/CloudMusic/scrapy_cloudmusic/scrapy_cloudmusic/pipelines.py" />
+        <option value="$PROJECT_DIR$/WebApi/__init__.py" />
+        <option value="$PROJECT_DIR$/WebApi/WebServer.py" />
+        <option value="$PROJECT_DIR$/GetProxies/getFreeProxies.py" />
+        <option value="$PROJECT_DIR$/Main/proxyManager.py" />
+        <option value="$PROJECT_DIR$/Scheduler/checkSourceProxies.py" />
+        <option value="$PROJECT_DIR$/Scheduler/getSourceProxies.py" />
         <option value="$PROJECT_DIR$/Scheduler/refreshUsefulProxy.py" />
+        <option value="$PROJECT_DIR$/Util/checkProxy.py" />
+        <option value="$PROJECT_DIR$/Util/getConfig.py" />
+        <option value="$PROJECT_DIR$/Util/getHtml.py" />
+        <option value="$PROJECT_DIR$/Util/getUserAgent.py" />
+        <option value="$PROJECT_DIR$/Util/ipFormat.py" />
+        <option value="$PROJECT_DIR$/WebApi/myWebServer.py" />
+        <option value="$PROJECT_DIR$/DB/redisClient.py" />
+        <option value="$PROJECT_DIR$/WebApi/apis.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="74" />
-    <option name="y" value="60" />
-    <option name="width" value="1296" />
-    <option name="height" value="911" />
+    <option name="x" value="291" />
+    <option name="y" value="132" />
+    <option name="width" value="1292" />
+    <option name="height" value="912" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -214,6 +169,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ProxyPool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProxyPool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProxyPool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebApi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -296,39 +265,66 @@
     <property name="last_opened_file_path" value="C:/mediaSpider/Attack/localtest_multiprocess.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.localtest_multiprocess">
-    <configuration default="false" name="proxyManager" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.apis">
+    <configuration default="false" name="pipelines" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Main" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ProxyPool" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main/proxyManager.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="space_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="C:/mediaSpider/tool" />
+      <option name="WORKING_DIRECTORY" value="C:/mediaSpider/crawl/media_spider/CloudMusic/scrapy_cloudmusic/scrapy_cloudmusic" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ProxyPool" />
-      <option name="SCRIPT_NAME" value="C:/mediaSpider/tool/space_file.py" />
+      <option name="SCRIPT_NAME" value="C:/mediaSpider/crawl/media_spider/CloudMusic/scrapy_cloudmusic/scrapy_cloudmusic/pipelines.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in myWebServer" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WebApi" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ProxyPool" />
+      <option name="SCRIPT_NAME" value="C:\ProxyPool\WebApi\myWebServer.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in myWebServer (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WebApi" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ProxyPool" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WebApi/myWebServer.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="false" name="redisClient" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -348,36 +344,19 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="checkSourceProxies" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="apis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Scheduler" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WebApi" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ProxyPool" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scheduler/checkSourceProxies.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="localtest_multiprocess" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="C:/mediaSpider/Attack" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ProxyPool" />
-      <option name="SCRIPT_NAME" value="C:/mediaSpider/Attack/localtest_multiprocess.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WebApi/apis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -517,19 +496,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.proxyManager" />
-      <item index="1" class="java.lang.String" itemvalue="Python.space_file" />
-      <item index="2" class="java.lang.String" itemvalue="Python.redisClient" />
-      <item index="3" class="java.lang.String" itemvalue="Python.checkSourceProxies" />
-      <item index="4" class="java.lang.String" itemvalue="Python.localtest_multiprocess" />
+      <item index="0" class="java.lang.String" itemvalue="Python.pipelines" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in myWebServer" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in myWebServer (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.redisClient" />
+      <item index="4" class="java.lang.String" itemvalue="Python.apis" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.localtest_multiprocess" />
-        <item index="1" class="java.lang.String" itemvalue="Python.proxyManager" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in myWebServer (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.apis" />
         <item index="2" class="java.lang.String" itemvalue="Python.redisClient" />
-        <item index="3" class="java.lang.String" itemvalue="Python.space_file" />
-        <item index="4" class="java.lang.String" itemvalue="Python.checkSourceProxies" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in myWebServer" />
+        <item index="4" class="java.lang.String" itemvalue="Python.pipelines" />
       </list>
     </recent_temporary>
   </component>
@@ -546,16 +525,48 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_myWebServer_(1) - 2018.05.18 at 11h 05m 30s.xml">
+      <configuration name="Unittests in myWebServer (1)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_myWebServer_(1) - 2018.05.18 at 11h 07m 29s.xml">
+      <configuration name="Unittests in myWebServer (1)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_myWebServer_(1) - 2018.05.18 at 11h 10m 14s.xml">
+      <configuration name="Unittests in myWebServer (1)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_myWebServer_(1) - 2018.05.18 at 11h 23m 12s.xml">
+      <configuration name="Unittests in myWebServer (1)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_myWebServer_(1) - 2018.05.18 at 12h 03m 11s.xml">
+      <configuration name="Unittests in myWebServer (1)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_myWebServer_(1) - 2018.05.18 at 12h 03m 42s.xml">
+      <configuration name="Unittests in myWebServer (1)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_myWebServer_(1) - 2018.05.18 at 12h 05m 17s.xml">
+      <configuration name="Unittests in myWebServer (1)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_myWebServer_(1) - 2018.05.18 at 14h 49m 22s.xml">
+      <configuration name="Unittests in myWebServer (1)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_myWebServer_(1) - 2018.05.18 at 14h 53m 35s.xml">
+      <configuration name="Unittests in myWebServer (1)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_myWebServer_(1) - 2018.05.18 at 14h 57m 46s.xml">
+      <configuration name="Unittests in myWebServer (1)" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="74" y="60" width="1296" height="911" extended-state="0" />
-    <editor active="true" />
+    <frame x="291" y="132" width="1292" height="912" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19713831" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1969697" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34190232" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34146342" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -579,71 +590,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.PyCharmCE2016.3/system/python_stubs/-1313743207/lxml/etree/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
-          <caret line="164" column="45" lean-forward="false" selection-start-line="164" selection-start-column="39" selection-end-line="164" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/proxy_pool/Util/utilFunction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1364">
-          <caret line="67" column="21" lean-forward="false" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python35/Lib/site-packages/requests/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="843" column="0" lean-forward="false" selection-start-line="843" selection-start-column="0" selection-end-line="843" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python35/Lib/base64.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12276">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/mediaSpider/crawl/media_spider/CloudMusic/scrapy_cloudmusic/scrapy_cloudmusic/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DB/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/haipproxy/config/rules.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="203" column="12" lean-forward="false" selection-start-line="203" selection-start-column="12" selection-end-line="203" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DB/mongo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/proxy_pool/DB/DbClient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1774">
-          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://F:/proxy_pool/Api/ProxyApi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-616">
@@ -721,13 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/mediaSpider/crawl/media_spider/CloudMusic/scrapy_cloudmusic/scrapy_cloudmusic/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="37" column="28" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://F:/proxy_pool/Util/utilClass.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-146">
@@ -746,39 +685,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DB/ssdb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/mediaSpider/crawl/media_spider/CloudMusic/scrapy_cloudmusic/scrapy_cloudmusic/spiders/cloudmusic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Util/getUserAgent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/DB/ssdb.py" />
     <entry file="file://C:/Python35/Lib/configparser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="955" column="0" lean-forward="false" selection-start-line="955" selection-start-column="0" selection-end-line="955" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -786,7 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -794,7 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -802,7 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1958">
           <caret line="92" column="22" lean-forward="false" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="89" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,65 +725,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Util/getConfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/mediaSpider/tool/space_file.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DB/redisClient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scheduler/getSourceProxies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Util/ipFormat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GetProxies/getFreeProxies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#1021#1449#0" expanded="false" />
-            <element signature="e#1524#2269#0" expanded="false" />
-            <element signature="e#2349#3370#0" expanded="false" />
-            <element signature="e#3450#4186#0" expanded="false" />
-            <element signature="e#4266#5049#0" expanded="false" />
-            <element signature="e#5126#5688#0" expanded="false" />
-            <element signature="e#5764#6173#0" expanded="false" />
-            <element signature="e#6253#6678#0" expanded="false" />
-            <element signature="e#6760#7439#0" expanded="false" />
-            <element signature="e#7512#8114#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -880,15 +736,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="667" column="0" lean-forward="false" selection-start-line="667" selection-start-column="0" selection-end-line="667" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://C:/Python35/Lib/asyncio/base_events.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
+        <state relative-caret-position="7326">
           <caret line="355" column="0" lean-forward="false" selection-start-line="355" selection-start-column="0" selection-end-line="355" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -896,15 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="470" column="0" lean-forward="false" selection-start-line="470" selection-start-column="0" selection-end-line="470" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python35/Lib/asyncio/coroutines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,25 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1958">
           <caret line="148" column="9" lean-forward="true" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Util/checkProxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scheduler/checkSourceProxies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -938,15 +764,141 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/mediaSpider/crawl/media_spider/CloudMusic/scrapy_cloudmusic/scrapy_cloudmusic/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/mediaSpider/crawl/media_spider/CloudMusic/scrapy_cloudmusic/scrapy_cloudmusic/spiders/cloudmusic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="15" column="44" lean-forward="false" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApi/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python35/Lib/http/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="328" column="27" lean-forward="false" selection-start-line="328" selection-start-column="27" selection-end-line="328" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/mediaSpider/tool/aiohttp_text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-88">
+          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/mediaSpider/tool/checkio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python35/Lib/socketserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="727" column="0" lean-forward="false" selection-start-line="727" selection-start-column="0" selection-end-line="731" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python35/Lib/socket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="593" column="0" lean-forward="false" selection-start-line="593" selection-start-column="0" selection-end-line="593" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GetProxies/getFreeProxies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/proxyManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scheduler/checkSourceProxies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scheduler/getSourceProxies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scheduler/refreshUsefulProxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/checkProxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/getConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Util/getHtml.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="40" column="49" lean-forward="true" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
-          <folding />
+        <state relative-caret-position="44">
+          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/getUserAgent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/ipFormat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python35/Lib/asyncio/coroutines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="204" column="41" lean-forward="false" selection-start-line="204" selection-start-column="41" selection-end-line="204" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -954,34 +906,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="104" column="15" lean-forward="false" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://C:/mediaSpider/Attack/localtest_multiprocess.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main/proxyManager.py">
+    <entry file="file://$USER_HOME$/.PyCharmCE2016.3/system/python_stubs/-1313743207/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        <state relative-caret-position="205">
+          <caret line="519" column="4" lean-forward="true" selection-start-line="519" selection-start-column="4" selection-end-line="522" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB/redisClient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="30" column="63" lean-forward="false" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApi/apis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#24#60#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Scheduler/refreshUsefulProxy.py">
+    <entry file="file://$PROJECT_DIR$/WebApi/myWebServer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        <state relative-caret-position="552">
+          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
           <folding>
-            <element signature="e#0#36#0" expanded="true" />
+            <element signature="e#214#280#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,7 +1,9 @@
+'''
+    封住requests的get请求，方便使用
+'''
 from Util.getUserAgent import FakeChromeUA
 import requests
 import time
-
 
 class WebRequest:
     def __init__(self):

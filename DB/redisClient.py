@@ -1,3 +1,6 @@
+'''
+    连接redis，以及相关操作
+'''
 import redis
 from Util.getConfig import GetConfig
 
@@ -16,16 +19,20 @@ class RedisConn:
     def del_hash(self, hash_name, key):
         return self.redis_conn.hdel(hash_name, key)
 
-    def get_all_hash(self, hash_name):
+    def get_all_hash(self, hash_name, result_type=1):
         '''
         :param hash_name:
-        :return: 编码过的ip列表
+        :param result_type: 返回的格式:1-仅返回ip的列表 2-返回{ip:score}的列表
+        :return:
         '''
-        return [key.decode('utf-8') for key in self.redis_conn.hgetall(hash_name).keys()]
-
+        if result_type == 1:
+            return [key.decode('utf-8') for key in self.redis_conn.hgetall(hash_name).keys()]
+        elif result_type == 2:
+            return [{key.decode('utf-8'):value.decode('utf-8')} for key, value in self.redis_conn.hgetall(hash_name).items()]
 
 if __name__ == '__main__':
     rc = RedisConn()
-    rc.push_hash('UsefulProxy', {'192.168.2.100:8081':99})
+    # rc.push_hash('123123', {'192.168.2.100:8081':99}
+
     # rc.redis_conn.rpush('123',1,1,1)
 

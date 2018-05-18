@@ -1,10 +1,9 @@
-from DB.redisClient import RedisConn
-from Util.checkProxy import check_proxy
-import asyncio
-
 '''
     检验获得的免费ip有效性，并将结果保存
 '''
+from DB.redisClient import RedisConn
+from Util.checkProxy import check_proxy
+import asyncio
 
 class CheckProxy:
     def check_results(self, check_proxies):

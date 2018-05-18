@@ -1,9 +1,10 @@
-from Util.getConfig import GetConfig
-import aiohttp
-import time
 '''
     异步访问验证网站，快速检验ip有效性,返回检验结果
 '''
+from Util.getConfig import GetConfig
+import aiohttp
+import time
+
 check_url = GetConfig().config['CHECKINFO']['check_url']
 check_keywords = GetConfig().config['CHECKINFO']['check_keywords'].split('|')
 

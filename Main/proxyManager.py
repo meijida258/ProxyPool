@@ -1,12 +1,11 @@
+'''
+    控制代理ip池运行的主程序
+'''
 from Scheduler.getSourceProxies import get_source_proxies
 import time
 from DB.redisClient import RedisConn
 from Scheduler.checkSourceProxies import CheckProxy
 from Scheduler.refreshUsefulProxy import RefreshProxy
-
-'''
-    控制代理ip池运行的主程序
-'''
 
 refresh_interval = 7200 # 更新已有代理的时间间隔
 min_useful_proxies_num = 50 # 有效代理少与该值时，重新获取免费ip
@@ -18,7 +17,15 @@ cp = CheckProxy()
 if __name__ == '__main__':
 
     refresh_time = time.time()
+    first_refresh = True
     while True:
+        if time.time() - refresh_time > refresh_interval or first_refresh:
+            refresh_time = time.time()
+            print('重新检验UsefulProxy中ip的有效性...')
+            print(rp.refresh_main())
+            first_refresh = False
+
+
         if len(rc.get_all_hash('UsefulProxy')) <= min_useful_proxies_num:
             print('可用ip数不足100，重新抓取免费ip...')
             free_proxies = get_source_proxies()
@@ -30,9 +37,5 @@ if __name__ == '__main__':
                     cp.check_main(proxies_list)
             print('检查完成')
 
-        if time.time() - refresh_time > refresh_interval:
-            refresh_time = time.time()
-            print('重新检验UsefulProxy中ip的有效性...')
-            print(rp.refresh_main())
 
         time.sleep(300)

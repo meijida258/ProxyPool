@@ -1,10 +1,10 @@
+'''
+    获取免费ip，返回ip列表结果，采用多进程
+'''
 from GetProxies.getFreeProxies import GetProxies
 from multiprocessing import Pool as ProcessPool
 from Util.getConfig import GetConfig
 
-'''
-    获取免费ip，返回ip列表结果，采用多进程
-'''
 def run_cls_func(func_name):
     return getattr(GetProxies, func_name)()
 
