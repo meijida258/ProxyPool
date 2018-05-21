@@ -12,20 +12,26 @@ from Util.checkProxy import check_proxy
 import asyncio
 
 class RefreshProxy:
+    def __init__(self, redis_conn):
+        self.redis_conn = redis_conn
     def refresh_result(self, refresh_proxies):
         useful_count = 0
         for result in refresh_proxies:
             if result.pop('type') == 1:
-                score = 100 - (result['used_time'] - 1) * 5 if (100 - (result['used_time'] - 1) * 5) > 0 else 0
-                rc.push_hash('UsefulProxy', {result['proxy']: int(score)})
+                score = 5
+                rc.push_hash('UsefulProxy', {result['proxy']: int(score)}, redis_conn=self.redis_conn)
                 useful_count += 1
             else:
-                rc.del_hash('UsefulProxy', result['proxy'])
+                score = int(rc.get_by_key(hash_name='UsefulProxy', redis_conn=self.redis_conn, key=result['proxy']))
+                if score == 1:
+                    rc.del_hash('UsefulProxy', result['proxy'], redis_conn=self.redis_conn)
+                else:
+                    rc.push_hash('UsefulProxy', {result['proxy']: int(score)-1}, redis_conn=self.redis_conn)
         return '验证{}个ip，有效ip:{}个,失效ip：{}个'.format(len(refresh_proxies), useful_count, len(refresh_proxies)-useful_count)
 
     def refresh_main(self):
         rc = RedisConn()
-        useful_proxies = rc.get_all_hash('UsefulProxy')
+        useful_proxies = rc.get_all_hash('UsefulProxy', redis_conn=self.redis_conn)
         # 验证useful_proxies
         loop = asyncio.get_event_loop()
         refresh_proxies = []

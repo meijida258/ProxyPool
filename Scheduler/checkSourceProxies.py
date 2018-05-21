@@ -12,12 +12,15 @@ from Util.checkProxy import check_proxy
 import asyncio
 
 class CheckProxy:
+    def __init__(self, redis_conn):
+        self.redis_conn = redis_conn
+
     def check_results(self, check_proxies):
         useful_count = 0
         for result in check_proxies:
             if result.pop('type') == 1:
-                score = 100 - (result['used_time']-1)*5 if (100 - (result['used_time']-1)*5) > 0 else 0
-                rc.push_hash('UsefulProxy', {result['proxy']:int(score)})
+                score = 5
+                RedisConn.push_hash('UsefulProxy', {result['proxy']:int(score)}, redis_conn=self.redis_conn)
                 useful_count += 1
             # rc.del_list_item('SourceProxy', check_result['proxy'])
         return '验证{}个ip，有效ip:{}个,失效ip：{}个'.format(len(check_proxies), useful_count, len(check_proxies)-useful_count)

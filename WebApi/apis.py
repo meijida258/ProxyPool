@@ -10,10 +10,13 @@ sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 
 from DB.redisClient import RedisConn
 import random
+import redis
 
-def get_proxy(count, score=-1):
-    rc = RedisConn()
-    useful_proxies = rc.get_all_hash('UsefulProxy', result_type=2)
+
+
+def get_proxy(count, redis_conn, score=-1):
+    # redis_conn = redis.StrictRedis(host='localhost', port=6379, db=3)
+    useful_proxies = RedisConn.get_all_hash('UsefulProxy', result_type=2, redis_conn=redis_conn)
     if int(score) > 0:
         insert_proxy = {'localhost':score}
         useful_proxies.append(insert_proxy)
@@ -30,3 +33,8 @@ def get_proxy(count, score=-1):
             return [list(item.keys())[0] for item in useful_proxies]
         return [list(item.keys())[0] for item in useful_proxies[:count]]
 
+# import time, requests
+# st = time.clock()
+# print(get_proxy(1, 1, 50))
+# print(requests.get('http://localhost:6324/proxy_get?count=1&score=50').json()[0])
+# print(time.clock() - st)

@@ -15,10 +15,12 @@ from http.server import HTTPServer, BaseHTTPRequestHandler# 启动服务函数
 import re
 from WebApi.apis import get_proxy
 import json
+import redis
 
 # 自定义处理程序，用于处理HTTP请求
 class TestHTTPHandler(BaseHTTPRequestHandler):
     # 处理GET请求
+    redis_conn = redis.StrictRedis(host='localhost', port=6379, db=3)
     def do_GET(self):
         # 正则匹配获得请求参数
         try:
@@ -29,7 +31,7 @@ class TestHTTPHandler(BaseHTTPRequestHandler):
             score = int(re.findall(r'/proxy_get\?.*?&score=(\d+)', self.path)[0])
         except IndexError:
             score = -1
-        proxies_list = get_proxy(count, score)
+        proxies_list = get_proxy(count, redis_conn=self.redis_conn, score=score)
         # 转成json，在编码成utf-8
         proxies_json = json.dumps(proxies_list).encode('utf-8')
         # self.protocal_version = 'HTTP/1.1'  # 设置协议版本
