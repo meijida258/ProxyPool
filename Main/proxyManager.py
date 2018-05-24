@@ -49,4 +49,4 @@ if __name__ == '__main__':
             print('检查完成')
 
         print('代理池开启中...')
-        time.sleep(300)
+        time.sleep(100)
