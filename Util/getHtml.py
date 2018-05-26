@@ -22,7 +22,7 @@ class WebRequest:
                 'Connection': 'keep-alive',
                 'Accept-Language': 'zh-CN,zh;q=0.8'}
     @staticmethod
-    def get(url, retry_times=5, proxies=None, timeout=30, interval=3, verify_flag=list(), response_encoding=None):
+    def get(url, retry_times=5, proxies=None, timeout=30, interval=3, verify_flag=list(), response_encoding=None, verify=True):
         # 是否使用代理
         if proxies == 'gfw_proxies':
             used_proxies = {'http': 'http://{}'.format(wr.gfw_proxies),
@@ -34,7 +34,7 @@ class WebRequest:
 
         while retry_times > 0:
             try:
-                response = requests.get(url, proxies=used_proxies, headers=wr.headers(), timeout=timeout)
+                response = requests.get(url, proxies=used_proxies, headers=wr.headers(), timeout=timeout, verify=verify)
                 if response_encoding:
                     response.encoding = response_encoding
                 if any(f in response.text for f in verify_flag):

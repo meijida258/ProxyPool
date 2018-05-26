@@ -41,4 +41,5 @@ if __name__ == '__main__':
     # rc.push_hash('123123', {'192.168.2.100:8081':99}
 
     # rc.redis_conn.rpush('123',1,1,1)
-
+    # redis_conn = redis.StrictRedis(host='localhost', port=6379, db=3)
+    # print(rc.get_all_hash('UsefulProxy',redis_conn))

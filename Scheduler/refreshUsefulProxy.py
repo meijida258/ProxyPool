@@ -1,5 +1,5 @@
 '''
-    定时触发的检验有效ip列表中的ip，更新有效ip信息，删除失效ip
+    定时触发的检验有效ip列表中的ip，删除失效ip
 '''
 import sys
 import os

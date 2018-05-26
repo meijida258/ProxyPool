@@ -198,4 +198,4 @@ class GetProxies:
         return list()
 if __name__ == '__main__':
     gp = GetProxies()
-    print(gp.get_from_proxylist())
+    print(gp.get_from_coderbusy())

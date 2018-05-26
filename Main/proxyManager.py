@@ -15,7 +15,7 @@ from Scheduler.refreshUsefulProxy import RefreshProxy
 import redis
 
 refresh_interval = 600 # 更新已有代理的时间间隔
-min_useful_proxies_num = 50 # 有效代理少与该值时，重新获取免费ip
+min_useful_proxies_num = 80 # 有效代理少与该值时，重新获取免费ip
 
 redis_conn = redis.StrictRedis(host='localhost', port=6379, db=3)
 
