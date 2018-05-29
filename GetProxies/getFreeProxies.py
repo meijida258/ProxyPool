@@ -199,3 +199,4 @@ class GetProxies:
 if __name__ == '__main__':
     gp = GetProxies()
     print(gp.get_from_coderbusy())
+    # for i in globals()

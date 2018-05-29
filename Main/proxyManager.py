@@ -38,10 +38,10 @@ if __name__ == '__main__':
 
 
         if len(RedisConn.get_all_hash('UsefulProxy',redis_conn=redis_conn)) <= min_useful_proxies_num:
-            print('可用ip数不足100，重新抓取免费ip...')
+            print('可用ip数不足{}，重新抓取免费ip...'.format(min_useful_proxies_num))
             free_proxies = get_source_proxies()
             print('共获取免费ip{}个'.format(sum([len(i) for i in free_proxies])))
-            print('开始检查获取免费ip')
+            print('开始检查获取的免费ip')
             # free_proxies = [['192.168.2.100:8081','127.0.0.1:1080'], ['127.0.0.1:1080','127.0.0.1:1080']]
             for proxies_list in free_proxies:
                 if proxies_list:
