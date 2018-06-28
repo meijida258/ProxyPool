@@ -8,7 +8,7 @@ PACKAGE_PARENT = '..'
 SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
 sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 from DB.redisClient import RedisConn
-from Util.checkProxy import check_proxy
+from Util.checkProxy import main
 import asyncio
 
 class RefreshProxy:
@@ -33,12 +33,12 @@ class RefreshProxy:
         rc = RedisConn()
         useful_proxies = rc.get_all_hash('UsefulProxy', redis_conn=self.redis_conn)
         # 验证useful_proxies
-        loop = asyncio.get_event_loop()
-        refresh_proxies = []
-        tasks = [check_proxy(proxies, refresh_proxies) for proxies in useful_proxies]
-        loop.run_until_complete(asyncio.wait(tasks))
-
-        refresh_log = self.refresh_result(refresh_proxies)
+        # loop = asyncio.get_event_loop()
+        # refresh_proxies = []
+        # tasks = [check_proxy(proxies, refresh_proxies) for proxies in useful_proxies]
+        # loop.run_until_complete(asyncio.wait(tasks))
+        refresh_result = main(useful_proxies)
+        refresh_log = self.refresh_result(refresh_result)
         return refresh_log
 
 if __name__ == '__main__':

@@ -8,7 +8,7 @@ PACKAGE_PARENT = '..'
 SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
 sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 from DB.redisClient import RedisConn
-from Util.checkProxy import check_proxy
+from Util.checkProxy import main
 import asyncio
 
 class CheckProxy:
@@ -31,10 +31,11 @@ class CheckProxy:
         :return:
         '''
         # 验证sourceProxy
-        loop = asyncio.get_event_loop()
-        check_result = []
-        tasks = [check_proxy(proxies, check_result) for proxies in proxies_list]
-        loop.run_until_complete(asyncio.wait(tasks))
+        # loop = asyncio.get_event_loop()
+        # check_result = []
+        # tasks = [check_proxy(proxies, check_result) for proxies in proxies_list]
+        # loop.run_until_complete(asyncio.wait(tasks))
+        check_result = main(proxies_list)
         # 根据结果保存usefulProxy
         print(self.check_results(check_result))
 
